@@ -1,0 +1,8 @@
+#!/bin/bash
+
+tput bold
+echo "Attempting to stop Computação avançada 2025/26 @ ISCTE-IUL container"
+tput sgr0
+
+# Stop container `hpc`
+docker stop hpc

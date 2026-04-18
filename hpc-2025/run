@@ -1,0 +1,11 @@
+#!/bin/bash
+
+tput bold
+echo "Computação avançada 2025/26 @ ISCTE-IUL"
+tput sgr0
+
+# Launches Docker iscte/uproc2025 image mounting local folder labs
+
+docker run --interactive --tty --hostname hpc \
+    --volume "$PWD/labs":/home/student/labs \
+    --name hpc --rm iscte/hpc2025

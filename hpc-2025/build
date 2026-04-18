@@ -1,0 +1,7 @@
+#!/bin/bash
+
+tput bold
+echo "Building container for Computação Avançada 2025/26 @ ISCTE-IUL"
+tput sgr0
+
+docker build --force-rm --tag iscte/hpc2025 .
