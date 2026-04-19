@@ -205,7 +205,7 @@ uint8_t * gauss( uint8_t *img, const int dims[], int level ) {
         // Apply kernel convolution
         #pragma omp parallel for collapse(2)
         for( int j = 1; j < dims[1]-1; j++ ) {
-            for( int i = 1; i < dims[0]-1; i++ ) {
+            for( int i = 1; i < dims[1]-1; i++ ) {
                 float f = 0.;
                 // No need to parallelize this loop, as it is only 9 iterations
                 for( int k1 = -1; k1 <= 1; k1 ++ )
