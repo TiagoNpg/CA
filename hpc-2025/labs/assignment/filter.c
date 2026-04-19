@@ -5,6 +5,12 @@
 #include <math.h>
 #include <omp.h>
 
+/*
+ * Membros do grupo:
+ * 1. Francisco Ribeiro - 123930
+ * 2. Tiago Nunes - 123298
+ */
+
 /**
  * @brief Reads PGM (portable GrayMap) image
  * 
